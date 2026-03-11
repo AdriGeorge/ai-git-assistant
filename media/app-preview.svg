@@ -1,0 +1,60 @@
+<svg width="1440" height="960" viewBox="0 0 1440 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="190" y1="74" x2="1226" y2="905" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#020617"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#34D399"/>
+      <stop offset="1" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="shadow" x="116" y="84" width="1208" height="792" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="28"/>
+      <feGaussianBlur stdDeviation="32"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.00784314 0 0 0 0 0.0235294 0 0 0 0 0.0901961 0 0 0 0.42 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect width="1440" height="960" fill="#020617"/>
+  <circle cx="305" cy="102" r="210" fill="#34D399" fill-opacity="0.18"/>
+  <circle cx="1178" cy="872" r="252" fill="#0EA5E9" fill-opacity="0.10"/>
+
+  <g filter="url(#shadow)">
+    <rect x="180" y="120" width="1080" height="664" rx="28" fill="url(#bg)"/>
+    <rect x="180.5" y="120.5" width="1079" height="663" rx="27.5" stroke="#334155"/>
+
+    <rect x="214" y="156" width="214" height="38" rx="19" fill="#0F2F2A"/>
+    <text x="238" y="180" fill="#D1FAE5" font-family="Arial, sans-serif" font-size="15" letter-spacing="2.4">AI COMMIT MESSAGE GENERATOR</text>
+
+    <text x="214" y="254" fill="#E5EEFB" font-family="Arial, sans-serif" font-size="42" font-weight="700">Generated commit messages</text>
+    <text x="214" y="294" fill="#9FB0C9" font-family="Arial, sans-serif" font-size="22">Source: staged diff. Copy any suggestion or insert it into the active editor when possible.</text>
+
+    <g>
+      <rect x="214" y="344" width="1012" height="122" rx="22" fill="#111B31" stroke="#334155"/>
+      <text x="240" y="382" fill="#9FB0C9" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1.5">PRIMARY</text>
+      <rect x="1032" y="365" width="74" height="32" rx="16" fill="#0F172A" stroke="#334155"/>
+      <text x="1055" y="386" fill="#E5EEFB" font-family="Arial, sans-serif" font-size="14">Copy</text>
+      <rect x="1116" y="365" width="84" height="32" rx="16" fill="url(#accent)"/>
+      <text x="1141" y="386" fill="#052E2B" font-family="Arial, sans-serif" font-size="14" font-weight="700">Insert</text>
+      <text x="240" y="432" fill="#E5EEFB" font-family="Courier New, monospace" font-size="24">feat(webview): add polished AI commit result panel</text>
+    </g>
+
+    <g>
+      <rect x="214" y="486" width="1012" height="106" rx="22" fill="#111B31" stroke="#334155"/>
+      <text x="240" y="524" fill="#9FB0C9" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1.5">ALTERNATIVE 1</text>
+      <text x="240" y="570" fill="#E5EEFB" font-family="Courier New, monospace" font-size="22">refactor(ui): simplify commit suggestion presentation</text>
+    </g>
+
+    <g>
+      <rect x="214" y="612" width="1012" height="132" rx="22" fill="#101A2D" stroke="#334155"/>
+      <text x="240" y="650" fill="#9FB0C9" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1.5">REASONING</text>
+      <text x="240" y="696" fill="#9FB0C9" font-family="Arial, sans-serif" font-size="22">The diff introduces a user-facing result screen, so</text>
+      <text x="240" y="725" fill="#9FB0C9" font-family="Arial, sans-serif" font-size="22">`feat` best matches the primary impact of the change.</text>
+    </g>
+  </g>
+</svg>

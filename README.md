@@ -2,6 +2,10 @@
 
 AI Commit Message Generator is a minimal VS Code extension that turns a selected git diff, or the staged diff from the current workspace, into conventional commit message suggestions using either OpenAI or Ollama.
 
+## Preview
+
+![AI Commit Message Generator preview](./media/app-preview.svg)
+
 ## What The Extension Does
 
 - Uses the active text selection when it looks like a diff
