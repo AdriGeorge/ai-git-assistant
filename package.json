@@ -1,0 +1,60 @@
+{
+  "name": "ai-commit-message-generator",
+  "displayName": "AI Commit Message Generator",
+  "description": "Generate conventional commit messages from a selected or staged git diff.",
+  "version": "0.1.0",
+  "publisher": "local",
+  "private": true,
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:aiCommitMessageGenerator.generateCommitMessage"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "aiCommitMessageGenerator.generateCommitMessage",
+        "title": "AI Commit Message: Generate"
+      }
+    ],
+    "configuration": {
+      "title": "AI Commit Message Generator",
+      "properties": {
+        "aiCommitMessageGenerator.apiKey": {
+          "type": "string",
+          "default": "",
+          "markdownDescription": "OpenAI API key used to generate commit messages."
+        },
+        "aiCommitMessageGenerator.model": {
+          "type": "string",
+          "default": "gpt-5-mini",
+          "markdownDescription": "OpenAI model used for commit message generation."
+        },
+        "aiCommitMessageGenerator.useSelectionFirst": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "Use the active editor selection before falling back to the staged diff."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "tsc --noEmit -p ./",
+    "test": "npm run compile && node --test dist/test/*.test.js"
+  },
+  "dependencies": {
+    "openai": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/vscode": "^1.96.0",
+    "typescript": "^5.8.0"
+  }
+}
